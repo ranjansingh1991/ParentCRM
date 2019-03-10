@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llnoticeDigPnt"
+    android:layout_width="350dp"
+    android:layout_height="120dp"
+    android:layout_marginBottom="16dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/bottom_line_light"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="@string/title"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17sp" />
+
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="13sp"
+                    android:text="@string/holiday_date"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="NestedWeights" />
+
+
+                <TextView
+                    android:id="@+id/tvHolidayDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="NestedWeights" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tvDescription1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:textColor="@android:color/darker_gray"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
